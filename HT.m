@@ -7,11 +7,11 @@ rot1(3,2)=sin(theta1);
 rot1(3,3)=cos(theta1);
 
 rot2=zeros(3,3);
-rot2(2,2)=1;
+rot2(3,3)=1;
 rot2(1,1)=cos(theta2);
-rot2(1,3)=-sin(theta2);
-rot2(3,1)=sin(theta2);
-rot2(3,3)=cos(theta2);
+rot2(1,2)=-sin(theta2);
+rot2(2,1)=sin(theta2);
+rot2(2,2)=cos(theta2);
 
 trans1=eye(4);
 trans1(1,4)=v1;
